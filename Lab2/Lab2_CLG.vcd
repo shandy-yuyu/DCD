@@ -1,0 +1,161 @@
+$date
+	Mon May 25 22:36:42 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module t_Lab2_CLG $end
+$var wire 4 ! C3 [4:1] $end
+$var wire 4 " C2 [4:1] $end
+$var wire 4 # C1 [4:1] $end
+$var reg 1 $ C0 $end
+$var reg 4 % G [3:0] $end
+$var reg 4 & P [3:0] $end
+$scope module M1 $end
+$var wire 1 $ C0 $end
+$var wire 4 ' G [3:0] $end
+$var wire 4 ( P [3:0] $end
+$var wire 1 ) a $end
+$var wire 1 * b $end
+$var wire 1 + c $end
+$var wire 1 , d $end
+$var wire 1 - e $end
+$var wire 1 . f $end
+$var wire 1 / g $end
+$var wire 1 0 h $end
+$var wire 1 1 i $end
+$var wire 1 2 j $end
+$var wire 4 3 C [4:1] $end
+$upscope $end
+$scope module M2 $end
+$var wire 1 $ C0 $end
+$var wire 4 4 G [3:0] $end
+$var wire 4 5 P [3:0] $end
+$var wire 4 6 C [4:1] $end
+$upscope $end
+$scope module M3 $end
+$var wire 1 $ C0 $end
+$var wire 4 7 G [3:0] $end
+$var wire 4 8 P [3:0] $end
+$var reg 4 9 C [4:1] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1101 9
+b1101 8
+b101 7
+b1101 6
+b1101 5
+b101 4
+b1101 3
+12
+01
+00
+0/
+0.
+0-
+0,
+0+
+0*
+0)
+b1101 (
+b101 '
+b1101 &
+b101 %
+0$
+b1101 #
+b1101 "
+b1101 !
+$end
+#50
+b1000 #
+b1000 3
+02
+b1000 "
+b1000 6
+b1000 !
+b1000 9
+1$
+b1000 %
+b1000 '
+b1000 4
+b1000 7
+b1100 &
+b1100 (
+b1100 5
+b1100 8
+#100
+b1101 #
+b1101 3
+b1101 "
+b1101 6
+b1101 !
+b1101 9
+0$
+b1101 %
+b1101 '
+b1101 4
+b1101 7
+b101 &
+b101 (
+b101 5
+b101 8
+#150
+b1100 #
+b1100 3
+b1100 "
+b1100 6
+12
+b1100 !
+b1100 9
+1$
+b1100 %
+b1100 '
+b1100 4
+b1100 7
+b1000 &
+b1000 (
+b1000 5
+b1000 8
+#200
+b101 #
+b101 3
+b101 "
+b101 6
+02
+b101 !
+b101 9
+0$
+b101 %
+b101 '
+b101 4
+b101 7
+b101 &
+b101 (
+b101 5
+b101 8
+#250
+b1011 #
+b1011 3
+b1011 "
+b1011 6
+1+
+1)
+1*
+b1011 !
+b1011 9
+1$
+b1011 %
+b1011 '
+b1011 4
+b1011 7
+b1011 &
+b1011 (
+b1011 5
+b1011 8
+#300

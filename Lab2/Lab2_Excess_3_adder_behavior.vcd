@@ -1,0 +1,72 @@
+$date
+	Mon May 25 20:56:56 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module t_Lab2_Excess_3_adder_behavior $end
+$var wire 4 ! Sum [3:0] $end
+$var wire 1 " Cout $end
+$var reg 4 # A [3:0] $end
+$var reg 4 $ B [3:0] $end
+$var reg 1 % Cin $end
+$scope module M1 $end
+$var wire 4 & A [3:0] $end
+$var wire 4 ' B [3:0] $end
+$var wire 1 % Cin $end
+$var reg 1 " Cout $end
+$var reg 4 ( Sum [3:0] $end
+$var reg 5 ) k [4:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b11 )
+b11 (
+b11 '
+b11 &
+0%
+b11 $
+b11 #
+0"
+b11 !
+$end
+#50
+b100 !
+b100 (
+b100 )
+1%
+#100
+b1100 !
+b1100 (
+b1100 )
+0%
+b111 $
+b111 '
+b1000 #
+b1000 &
+#150
+1"
+b11 !
+b11 (
+b10011 )
+1%
+#200
+b1011 !
+b1011 (
+b11011 )
+0%
+b1100 $
+b1100 '
+b1100 #
+b1100 &
+#250
+b1100 !
+b1100 (
+b11100 )
+1%
+#300

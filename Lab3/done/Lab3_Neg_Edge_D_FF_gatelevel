@@ -1,0 +1,167 @@
+#! /usr/local/Cellar/icarus-verilog/10.3/bin/vvp
+:ivl_version "10.3 (stable)" "(v10_3)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x7fba77e00e80 .scope module, "t_Lab3_Neg_Edge_D_FF_gatelevel" "t_Lab3_Neg_Edge_D_FF_gatelevel" 2 1;
+ .timescale 0 0;
+v0x7fba77e07210_0 .var "D", 0 0;
+v0x7fba77e072e0_0 .net "NQ", 0 0, L_0x7fba77e07c30;  1 drivers
+v0x7fba77e073b0_0 .net "Q", 0 0, L_0x7fba77e07af0;  1 drivers
+v0x7fba77e07480_0 .var "clock", 0 0;
+S_0x7fba77e00fe0 .scope module, "M1" "Lab3_Neg_Edge_D_FF_gatelevel" 2 6, 3 1 0, S_0x7fba77e00e80;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "Q"
+    .port_info 1 /OUTPUT 1 "NQ"
+    .port_info 2 /INPUT 1 "D"
+    .port_info 3 /INPUT 1 "clock"
+L_0x7fba77e07550 .functor OR 1, v0x7fba77e07480_0, L_0x7fba77e07730, C4<0>, C4<0>;
+v0x7fba77e06b30_0 .net "D", 0 0, v0x7fba77e07210_0;  1 drivers
+v0x7fba77e06bd0_0 .net "NQ", 0 0, L_0x7fba77e07c30;  alias, 1 drivers
+v0x7fba77e06c80_0 .net "NQ1", 0 0, L_0x7fba77e07730;  1 drivers
+v0x7fba77e06d70_0 .net "NQ2", 0 0, L_0x7fba77e079b0;  1 drivers
+v0x7fba77e06e40_0 .net "Q", 0 0, L_0x7fba77e07af0;  alias, 1 drivers
+v0x7fba77e06f10_0 .net "Q1", 0 0, L_0x7fba77e07600;  1 drivers
+v0x7fba77e06fa0_0 .net "Q2", 0 0, L_0x7fba77e07870;  1 drivers
+v0x7fba77e07070_0 .net "S2", 0 0, L_0x7fba77e07550;  1 drivers
+v0x7fba77e07100_0 .net "clock", 0 0, v0x7fba77e07480_0;  1 drivers
+S_0x7fba77e011a0 .scope module, "m1" "Lab3_SR_Latch_gatelevel" 3 6, 4 1 0, S_0x7fba77e00fe0;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "Q"
+    .port_info 1 /OUTPUT 1 "NQ"
+    .port_info 2 /INPUT 1 "S"
+    .port_info 3 /INPUT 1 "R"
+L_0x7fba77e07600/d .functor NOR 1, L_0x7fba77e079b0, L_0x7fba77e07730, C4<0>, C4<0>;
+L_0x7fba77e07600 .delay 1 (2,2,2) L_0x7fba77e07600/d;
+L_0x7fba77e07730/d .functor NOR 1, v0x7fba77e07480_0, L_0x7fba77e07600, C4<0>, C4<0>;
+L_0x7fba77e07730 .delay 1 (2,2,2) L_0x7fba77e07730/d;
+v0x7fba77e013b0_0 .net "NQ", 0 0, L_0x7fba77e07730;  alias, 1 drivers
+v0x7fba77e05eb0_0 .net "Q", 0 0, L_0x7fba77e07600;  alias, 1 drivers
+v0x7fba77e05f50_0 .net "R", 0 0, L_0x7fba77e079b0;  alias, 1 drivers
+v0x7fba77e06000_0 .net "S", 0 0, v0x7fba77e07480_0;  alias, 1 drivers
+S_0x7fba77e06100 .scope module, "m2" "Lab3_SR_Latch_gatelevel" 3 7, 4 1 0, S_0x7fba77e00fe0;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "Q"
+    .port_info 1 /OUTPUT 1 "NQ"
+    .port_info 2 /INPUT 1 "S"
+    .port_info 3 /INPUT 1 "R"
+L_0x7fba77e07870/d .functor NOR 1, L_0x7fba77e07550, L_0x7fba77e079b0, C4<0>, C4<0>;
+L_0x7fba77e07870 .delay 1 (2,2,2) L_0x7fba77e07870/d;
+L_0x7fba77e079b0/d .functor NOR 1, v0x7fba77e07210_0, L_0x7fba77e07870, C4<0>, C4<0>;
+L_0x7fba77e079b0 .delay 1 (2,2,2) L_0x7fba77e079b0/d;
+v0x7fba77e06320_0 .net "NQ", 0 0, L_0x7fba77e079b0;  alias, 1 drivers
+v0x7fba77e063d0_0 .net "Q", 0 0, L_0x7fba77e07870;  alias, 1 drivers
+v0x7fba77e06460_0 .net "R", 0 0, L_0x7fba77e07550;  alias, 1 drivers
+v0x7fba77e06510_0 .net "S", 0 0, v0x7fba77e07210_0;  alias, 1 drivers
+S_0x7fba77e06610 .scope module, "m3" "Lab3_SR_Latch_gatelevel" 3 8, 4 1 0, S_0x7fba77e00fe0;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "Q"
+    .port_info 1 /OUTPUT 1 "NQ"
+    .port_info 2 /INPUT 1 "S"
+    .port_info 3 /INPUT 1 "R"
+L_0x7fba77e07af0/d .functor NOR 1, L_0x7fba77e07730, L_0x7fba77e07c30, C4<0>, C4<0>;
+L_0x7fba77e07af0 .delay 1 (2,2,2) L_0x7fba77e07af0/d;
+L_0x7fba77e07c30/d .functor NOR 1, L_0x7fba77e07870, L_0x7fba77e07af0, C4<0>, C4<0>;
+L_0x7fba77e07c30 .delay 1 (2,2,2) L_0x7fba77e07c30/d;
+v0x7fba77e06840_0 .net "NQ", 0 0, L_0x7fba77e07c30;  alias, 1 drivers
+v0x7fba77e068e0_0 .net "Q", 0 0, L_0x7fba77e07af0;  alias, 1 drivers
+v0x7fba77e06980_0 .net "R", 0 0, L_0x7fba77e07730;  alias, 1 drivers
+v0x7fba77e06a50_0 .net "S", 0 0, L_0x7fba77e07870;  alias, 1 drivers
+    .scope S_0x7fba77e00e80;
+T_0 ;
+    %vpi_call 2 11 "$dumpfile", "Lab3_Neg_Edge_D_FF_gatelevel.vcd" {0 0 0};
+    %vpi_call 2 12 "$dumpvars" {0 0 0};
+    %delay 0, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fba77e07210_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7fba77e07480_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fba77e07480_0, 0, 1;
+    %delay 5, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7fba77e07210_0, 0, 1;
+    %delay 5, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7fba77e07480_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fba77e07480_0, 0, 1;
+    %delay 5, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fba77e07210_0, 0, 1;
+    %delay 5, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7fba77e07480_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fba77e07480_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7fba77e07480_0, 0, 1;
+    %delay 5, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7fba77e07210_0, 0, 1;
+    %delay 5, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fba77e07480_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7fba77e07480_0, 0, 1;
+    %delay 8, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fba77e07210_0, 0, 1;
+    %delay 2, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fba77e07480_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7fba77e07480_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fba77e07480_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7fba77e07480_0, 0, 1;
+    %delay 5, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7fba77e07210_0, 0, 1;
+    %delay 5, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fba77e07480_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fba77e07210_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7fba77e07480_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fba77e07480_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7fba77e07480_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fba77e07480_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7fba77e07480_0, 0, 1;
+    %end;
+    .thread T_0;
+    .scope S_0x7fba77e00e80;
+T_1 ;
+    %delay 180, 0;
+    %vpi_call 2 42 "$finish" {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 5;
+    "N/A";
+    "<interactive>";
+    "t_Lab3_Neg_Edge_D_FF_gatelevel.v";
+    "Lab3_Neg_Edge_D_FF_gatelevel.v";
+    "Lab3_SR_Latch_gatelevel.v";
